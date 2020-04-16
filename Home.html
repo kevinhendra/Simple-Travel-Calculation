@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="perhitungan.js"></script>
+</head>
+<body>
+	<form id="form">
+	<table border="2" width="100%">
+		<tr>
+			<td colspan="2"><h1 align="center">TRAVEL ALAM SUTRA</h1></td>
+		</tr>
+		<tr>
+			<td><table style="margin-left: 20px">
+				<tr>
+					<td>Nama</td>
+					<td>: <input type="text" style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td>Tujuan</td>
+					<td>: <select id="tujuan" style="margin-left: 10px">
+						<option value="jakarta">Jakarta</option>
+						<option value="cirebon">Cirebon</option>
+						<option value="bogor">Bogor</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Kelas</td>
+					<td>: <select id="kelas" style="margin-left: 10px">
+						<option value="ekonomi">Ekonomi</option>
+						<option value="bisnis">Bisnis</option>
+						<option value="eksekutif">Eksekutif</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Jumlah Tiket</td>
+					<td>: <input type="text" id="jumlah" style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td>Member</td>
+					<td>: <input type="radio" id="member" style="margin-left: 10px">Ya</td>
+				</tr>
+			</table>
+			</td>
+			<td> <table style="margin-left: 20px">
+				<tr>
+					<td>Harga Tiket</td>
+					<td>: Rp<input type="number" id="tiket" disabled style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td>Sub Total</td>
+					<td>: Rp<input type="number" id="subtotal" disabled style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td>Diskon</td>
+					<td>: Rp<input type="number" id="diskon" disabled style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td>Total Bayar</td>
+					<td>: Rp<input type="number" id="total" disabled style="margin-left: 10px"></td>
+				</tr>
+				<tr>
+					<td style="color: transparent;">
+					a
+					</td>
+				</tr>
+			</table>
+			</td>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" onclick="hitunga();" value="Hitung">
+					<input type="reset" onclick="alert('Data Telah Direset')" style="margin-right: 20px" value="Ulang ">
+				</td>
+			</tr>
+	</table>
+</form>
+</body>
+</html>
